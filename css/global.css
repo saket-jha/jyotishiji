@@ -1,0 +1,278 @@
+@import url("https://fonts.googleapis.com/css?family=tirhut&display=swap");
+
+:root {
+	/* For Colors =========*/
+	--bg-darkBlue: #3e457b;
+	--bg-orange: #f28753;
+	--bg-pink: #fff9f6;
+	--bg-honeydew: honeydew;
+	--bg-darkGreen: turquoise;
+	--bg-lightRed: lightcoral;
+	--color-darkBlue: #3e457b;
+	--color-orange: #f28753;
+	--color-grey: #373737;
+	--color-white: #ffffff;
+	--color-red: lightcoral;
+	/* For Size ==========*/
+	--size-font-h0: 100px;
+	--size-font-h1: 48px;
+	--size-font-h1_1: 40px;
+	--size-font-h2: 28px;
+	--size-font-h3: 18px;
+	--size-font-p1: 16px;
+	--size-font-p2: 24px;
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* Font family & Weight================*/
+@font-face {
+	font-family: tirhut;
+	src: url("../fonts/mithila.woff")
+		format("woff");
+}
+body {
+	font-family: tirhut, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h_1,
+.h_2 {
+	font-family: "tirhut", serif;
+	font-weight: 700;
+}
+
+.h_0 {
+	font-family: "tirhut";
+}
+
+.h_1 {
+	font-family: "tirhut", serif;
+	font-weight: 900;
+}
+
+.h_2 {
+	font-family: "tirhut", serif;
+	font-weight: 400;
+}
+
+.h_3 {
+	font-family: "tirhut";
+	font-weight: 400;
+}
+.btn_button {
+	font-family: "tirhut";
+	border-radius: 6px;
+}
+p,
+a {
+	font-family: "tirhut";
+	font-weight: 400;
+}
+.p_1,
+.P_2 {
+	font-family: "tirhut";
+	font-weight: 400;
+}
+
+/* Heading Sizes =========================*/
+.h_0 {
+	font-size: var(--size-font-h0);
+}
+.h_1 {
+	font-size: var(--size-font-h1);
+}
+.h_1_1 {
+	font-size: var(--size-font-h1_1);
+}
+.h_2 {
+	font-size: var(--size-font-h2);
+}
+.h_3 {
+	font-size: var(--size-font-h3);
+}
+/* Paragraph sizes =====================*/
+.p_1 {
+	font-size: var(--size-font-p1);
+}
+.p_2 {
+	font-size: var(--size-font-p2);
+}
+
+/* Font color =======================*/
+h1,
+h2,
+h3,
+p {
+	color: var(--color-darkBlue);
+}
+/* backgrounds Color ==============*/
+.bg_darkBlue {
+	background-color: var(--bg-darkBlue);
+}
+.bg_orange {
+	background-color: var(--bg-orange);
+}
+.bg_pink {
+	background-color: var(--bg-pink);
+}
+.bg_honeydew {
+	background-color: var(--bg-honeydew);
+}
+.bg_darkGreen {
+	background-color: var(--bg-darkGreen);
+}
+.bg_lightRed {
+	background-color: var(--bg-lightRed);
+}
+.bg_white {
+	background-color: var(--color-white);
+}
+.border_orange {
+	border: 5px solid var(--bg-orange);
+}
+.border_red {
+	border: 5px solid var(--bg-lightRed);
+}
+.border_white {
+	border: 5px solid white;
+}
+.border_top_pink {
+	border-top: 5px solid var(--bg-pink);
+	border-bottom: 5px solid var(--bg-pink);
+}
+
+.line_height {
+	line-height: 40px;
+}
+/* font color =====================*/
+
+.clr_darkBlue {
+	color: var(--color-darkBlue);
+}
+.clr_orange {
+	color: var(--color-orange) !important;
+}
+.clr_grey {
+	color: var(--color-grey);
+}
+.clr_white {
+	color: var(--color-white);
+}
+.clr_red {
+	color: var(--color-red);
+}
+
+.p_100 {
+	padding: 100px 0;
+}
+.p_80 {
+	padding: 80px 0;
+}
+.p_50 {
+	padding: 50px 0;
+}
+.m_50 {
+	margin: 50px auto;
+}
+
+.font_small {
+	font-size: 3.5vw;
+}
+
+.min-h-300 {
+	min-height: 300px;
+}
+
+.btn_know_more {
+	text-transform: uppercase;
+	font-family: "tirhut";
+	border-radius: 6px;
+}
+
+/* Smallest devices (landscape phones, 320px and up)*/
+@media (min-width: 320px) {
+	:root {
+		/* For Size ==========*/
+		--size-font-h0: 38px;
+		--size-font-h1: 28px;
+		--size-font-h2: 22px;
+		--size-font-h3: 18px;
+		--size-font-p1: 16px;
+	}
+
+	.m_100 {
+		margin: 25px auto;
+	}
+	.p_150 {
+		padding: 50px 0;
+	}
+	.m_150 {
+		margin: 50px auto;
+	}
+
+	.bg_darkBlues-full {
+		background-color: var(--bg-darkBlue);
+	}
+}
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	:root {
+		/* For Size ==========*/
+		--size-font-h0: 65px;
+		--size-font-h1: 48px;
+		--size-font-h2: 28px;
+		--size-font-h3: 18px;
+		--size-font-p1: 16px;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	:root {
+		/* For Size ==========*/
+		--size-font-h0: 80px;
+		--size-font-h1: 48px;
+		--size-font-h2: 28px;
+		--size-font-h3: 18px;
+		--size-font-p1: 16px;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	:root {
+		/* For Size ==========*/
+		--size-font-h0: 100px;
+		--size-font-h1: 48px;
+		--size-font-h2: 28px;
+		--size-font-h3: 18px;
+		--size-font-p1: 16px;
+	}
+	.m_100 {
+		margin: 100px auto;
+	}
+	.p_150 {
+		padding: 150px 0;
+	}
+	.bg_darkBlues-full {
+		background-color: transparent;
+	}
+	.m_150 {
+		margin: 150px auto;
+	}
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
+::placeholder {
+	/* Chrome, Firefox, Opera, Safari 10.1+ */
+	color: #e5d0c9;
+	opacity: 1; /* Firefox */
+	text-align: center;
+}

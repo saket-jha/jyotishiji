@@ -1,0 +1,35 @@
+select.dropdown{
+  width: auto;
+  height: 50px;
+  margin-left: 60px;
+  scroll-margin-top: 50px;
+  
+  background-color: rgb(250, 242, 248);
+  font-size:xx-large;
+}
+
+input.btn{
+  width: auto;
+  height: 50px;
+  margin-left: 60px;
+  scroll-margin-top: 50px;
+  border-radius: 5px;
+  color: white;
+  background-color: #3CB371; 
+  font-size: xx-large;
+
+}
+
+marquee{
+  color: white;
+  font-size: larger;
+  background-color: rgb(2, 68, 43);
+}
+
+div.b{
+  width: 80%;
+  border: black;
+  border-color: black;
+  word-wrap: break-word;
+  
+}

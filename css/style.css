@@ -1,0 +1,98 @@
+@import url(./global.css);
+@import url(./navbar.css);
+@import url(./index.css);
+@import url(./footer.css);
+@import url(./blog.css);
+@import url(./custom.css);
+
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+/* Global style  ============== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.w_150 {
+  width: 150px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Global Style End !===========*/
+
+/* Bootstrap Style =================*/
+
+.rounded {
+  border-radius: 0.65rem !important;
+}
+/* Bootstrap Style !=================*/
+
+/* Swiper Js====================== */
+.swiper-container {
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+}
+
+section.sec_testimonials .swiper-slide {
+  width: 100%;
+  height: 300px;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+}
+
+section.sec_testimonials .swiper-slide.swiper-slide-active {
+  filter: blur(0);
+  -webkit-filter: blur(0);
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  color: white;
+}
+
+/* Swiper Js !====================== */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  /* Swiper Js====================== */
+  section.sec_testimonials .swiper-slide {
+    width: 33%;
+  }
+  /* Swiper Js !====================== */
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px !important;
+  }
+}
+/* XX large devices (HD desktops, 1440px and up) */
+@media (min-width: 1440px) {
+  .container_large {
+    max-width: 1440px !important;
+    margin: auto;
+  }
+}

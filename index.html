@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html" />
+        <link rel="stylesheet" href="./css/style.css" />
+        <title>Video Editor</title>
+    </head>
+
+<style>
+   
+</style>
+
+<body>
+    <header>
+     <center>
+         <img src="./img/head2.JPG" class="img-fluid">
+     </center>   
+    </header>
+
+    <div class="navbar">
+        <a href="./index.html">Ffmpeg</a>
+        <a href="./shotcut.html">शॉटकट</a>
+        <a href="./vidhi.html">सरल प्रयोग विधि</a>
+        
+        <div class="dropdown">
+          <button class="dropbtn">डॉक्यूमेंटेशन
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            
+            <a href="dffmpeg.html">Ffmpeg</a>
+            <a href="dshotcut.html">शॉटकट</a>
+            
+     
+          </div>
+        </div>
+    </div>
+      
+   <center>
+        <marquee onmouseover="this.stop();" onmouseout="this.start();">डिस्क्लेमर: इस पोर्टल पर उपलब्ध सामग्री पर वेबसाइट किसी तरह के कॉपीराइट 
+            का दावा नहीं करता है,  यह केवल परोपकार की भावना से यहां उपलब्ध कराया गया है॥</marquee>
+
+    <h2>विश्व का तीव्रतम और सर्वोत्तम मनचाहा वीडियो एडिटर और मनचाहा कस्टम ऑडियो एडिटर बनायें
+         
+        मुफ्त में！</h2>
+<select id="select" class="dropdown">
+    <option value="">Select OS</option>
+    <option value="1">Windows 32 bit</option>
+    <option value="2">Windows 64 bit</option>
+    <option value="3">MacOs 64 bit</option>
+    <option value="4">Source Code</option>
+</select>
+
+<select id="win32build" class="dropdown" style="display:none">
+    <option value="">Select Option</option>
+    <option value="https://drive.google.com/file/d/1WwHfHS3M7mUJSRI6oHV26JxvB8jD2HqY">Static</option>
+    <option value="https://drive.google.com/file/d/1eZh2GxD6rUbYsD5woVO3xifawx5SFkgh">Shared</option>
+    <option value="https://drive.google.com/file/d/1SOAKWe19c5RNvWMnXZmQrJBdXoDlSZ7r">Dev</option>
+</select>
+
+<select id="win64build" class="dropdown" style="display:none">
+    <option value="">Select Option</option>
+    <option value="https://drive.google.com/file/d/1AfrK_B9dYT2d1wz8BHswyjwBRvdvdtsn">Static</option>
+    <option value="https://drive.google.com/file/d/198fBQqB4stYRTFJfjuRW3Q6YQoUPwV2S">Shared</option>
+    <option value="https://drive.google.com/file/d/1lDPnHpqvHwQ7Xy6sSMkGepM9a1HFb35t">Dev</option>
+</select>
+
+<select id="macos64build" class="dropdown" style="display:none">
+    <option value="">Select Option</option>
+    <option value="https://drive.google.com/file/d/17EXTaJl54Xt4yi6gdihac8Gs_fauhHlq">Static</option>
+    <option value="https://drive.google.com/file/d/18XgjPt4rUk95XwfZWuMAxViB5Wtrsxaf">Shared</option>
+    <option value="https://drive.google.com/file/d/1UsuHYTOKKt62Mj7ts4eVDsxuXerzkH5A">Dev</option>
+</select>
+
+<select id="sourcecode" class="dropdown" style="display:none">
+    <option value="">Select Option</option>
+    <option value="https://drive.google.com/file/d/1Ia79V4tLWGzAhjRBywHBz1FT7UMcNibw">Ffmpeg</option>
+    <option value="https://drive.google.com/file/d/12YXRte4pW1KjepsPpA6YEFJzSJcN0Ym7">Ffmpeg Snapshot</option>
+</select>
+
+<input type="button" id="win32" onclick="window.location.href=document.getElementById('win32build').value" value="Download" class="btn" style="display:none" />
+<input type="button" id="win64" onclick="window.location.href=document.getElementById('win64build').value" value="Download" class="btn" style="display:none" />
+<input type="button" id="mac64" onclick="window.location.href=document.getElementById('macos64build').value" value="Download" class="btn" style="display:none" />
+<input type="button" id="source" onclick="window.location.href=document.getElementById('sourcecode').value" value="Download" class="btn" style="display:none" />
+
+<br><br><br>
+<h3 style="color: red;">डाउनलोड करने की विधि:-</h3>
+   <p style="font-size: larger;">
+    1. सबसे पहले अपना OS चुनें <br>
+    2. OS चुनते ही एक और विकल्प चुनने को कहा जाएगा,  यदि आप डेवेलोपर नहीं हैं तो static चुनें <br>
+    3. Download बटन दबा दें,  आपका चुना हुआ फाईल डाउनलोड हो जाएगा॥ </p>
+   </center>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+<script>
+$(function() {
+    $('#select').change(function(){
+        if ($(this).val() == "1") {
+            $('#win32build').show();
+            $('#win32').show();
+        } else {
+            $('#win32build').hide();
+            $('#win32').hide();
+        }
+
+        if ($(this).val() == "2") {
+            $('#win64build').show();
+            $('#win64').show();
+        } else {
+            $('#win64build').hide();
+            $('#win64').hide();
+        }
+
+        if ($(this).val() == "3") {
+            $('#macos64build').show();
+            $('#mac64').show();
+        } else {
+            $('#macos64build').hide();
+            $('#mac64').hide();
+        }
+
+        if ($(this).val() == "4") {
+            $('#sourcecode').show();
+            $('#source').show();
+        } else {
+            $('#sourcecode').hide();
+            $('#source').hide();
+        }
+    });
+});
+</script>
+
+</body>
+</html>
