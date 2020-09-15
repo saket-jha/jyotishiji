@@ -33,3 +33,7 @@ div.b{
   word-wrap: break-word;
   
 }
+
+.bold{
+  font-size: larger;
+}

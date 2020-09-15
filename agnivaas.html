@@ -17,16 +17,16 @@ var s = (p*10+u*10+q*10+1*10)/10
 var t = s%4
 
 if(t == "3") {
-document.getElementById("textbx").value ="अग्निवास पृथ्वी पर है, होम करना कल्याणकारक होगा |";
+document.getElementById("demo1").innerHTML ="अग्निवास पृथ्वी पर है, होम करना कल्याणकारक होगा |";
 }
 if(t == "0") {
-document.getElementById("textbx").value ="अग्निवास पृथ्वी पर है, होम करना कल्याणकारक होगा |";
+document.getElementById("demo1").innerHTML ="अग्निवास पृथ्वी पर है, होम करना कल्याणकारक होगा |";
 }
 if(t == "1") {
-document.getElementById("textbx").value ="अग्निवास आकाश में है, होम करने से आयु का क्षय होगा |";
+document.getElementById("demo1").innerHTML ="अग्निवास आकाश में है, होम करने से आयु का क्षय होगा |";
 }
 if(t == "2") {
-document.getElementById("textbx").value ="अग्निवास पाताल में है, होम करने से धन का नाश  होगा |";
+document.getElementById("demo1").innerHTML ="अग्निवास पाताल में है, होम करने से धन का नाश  होगा |";
 }
 
 }
@@ -66,16 +66,16 @@ document.getElementById("textbx").value ="अग्निवास पाता�
            का दावा नहीं करता है,  यह केवल परोपकार की भावना से यहां उपलब्ध कराया गया है॥</marquee>
 <form>
 <center>
-<h1>अग्निवास</h1> <p><input type="button" id="bname" name="bname" value="सूचना" 
+<h1>अग्निवास</h1> <p class="bold"><input type="button" id="bname" name="bname" value="सूचना" 
 
 onclick="alert('अग्निवास का प्रोग्राम वैदिक व्यवहार एप्प का भाग है |');"></p>
 <h2>
-<p>पक्ष: <select id="paksha" name="paksha">
+<p class="bold">पक्ष: <select class="bold" id="paksha" name="paksha">
     <option value="0">शुक्ल पक्ष</option>
     <option value="15">कृष्ण पक्ष</option>
   </select>
 
-<p>तिथि: <select id="tithi" name="tithi">
+<p class="bold">तिथि: <select class="bold" id="tithi" name="tithi">
     <option value="1">प्रतिपदा</option>
     <option value="2">द्वितीया</option>
     <option value="3">तृतीया</option>
@@ -93,7 +93,7 @@ onclick="alert('अग्निवास का प्रोग्राम व�
     <option value="15">पूर्णिमा/अमावस्या</option>
       </select></p>
 
-<p>वार  : <select id="vaar" name="vaar">
+<p class="bold">वार  : <select class="bold" id="vaar" name="vaar">
     <option value="0">रविवार</option>
     <option value="1">सोमवार</option>
     <option value="2">मङ्गलवार</option>
@@ -103,15 +103,14 @@ onclick="alert('अग्निवास का प्रोग्राम व�
     <option value="6">शनिवार</option>
   </select></p>
 
-<p><input type="button" id="bname" name="bname" value="दिखायें" onclick="agnivaas
+<p><input class="bold" type="button" id="bname" name="bname" value="दिखायें" onclick="agnivaas
 
 ()"></p>
 
 <h1><p style="color:red">|| अग्निवास स्थान ||
 
 </p></h1>
-</h2>
-<input type ="text" id="textbx" value="result" style= "size:auto">
+
 <h2> <div id ="demo1"></div>
 </h2>
 Developer check: <div id ="demo2"></div> <div id ="demo3"></div><div id 
